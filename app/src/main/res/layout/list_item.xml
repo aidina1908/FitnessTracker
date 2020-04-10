@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/time_history"
+            android:layout_marginTop="6dp"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id="@+id/length_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Length:"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/speed_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/length_history"
+            android:layout_marginLeft="8dp"
+            android:text="Speed:"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/time_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/speed_history"
+            android:layout_marginLeft="8dp"
+            android:text="Time:"
+            android:maxLines="1" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
